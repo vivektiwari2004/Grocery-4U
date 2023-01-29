@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="login">
+            <form name="f1" action="authentication.php" onsubmit="return validation()" method="POST"> >
+                <br><br><br><br><br><br><br><br><br>
+
+
+                <label for="chk" aria-hidden="true" style="color: beige; font-size: 70px;">Login</label>
+
+                <input type="email" name="email" id="email" placeholder="Email" required="">
+
+                <input type="password" name="pswd" id="pswd" placeholder="Password" required="">
+                <button>Login</button>
+
+            </form>
+            <br><br><br>
+            <a href="reg.html"><button>Registation</button> </a>
+        </div>
+
+    </div>
+    <script>
+        function validation() {
+            var id = document.f1.email.value;
+            var ps = document.f1.pswd.value;
+            if (id.length == "" && ps.length == "") {
+                alert("User Name and Password fields are empty");
+                return false;
+            }
+            else {
+                if (id.length == "") {
+                    alert("User Name is empty");
+                    return false;
+                }
+                if (ps.length == "") {
+                    alert("Password field is empty");
+                    return false;
+                }
+            }
+        }  
+    </script>
+</body>
+
+</html>

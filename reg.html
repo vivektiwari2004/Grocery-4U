@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Registation Page</title>
+
+    <link rel="stylesheet" type="text/css" href="reg.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form action="insert.php" method="post">
+                <label for="chk" aria-hidden="true">Registation</label>
+                <input type="text" name="f_name" placeholder="Full name" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="Password" required="">
+                <input type="text" name="num" placeholder="Mobile number" required="">
+                <input type="text" name="gender" placeholder="Gender" required="">
+                <button>Registation</button>
+            </form>
+            <br><br>
+            <a href="login.html"> <button>Login</button></a>
+        </div>
+
+    </div>
+</body>
+
+</html>
