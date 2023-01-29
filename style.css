@@ -344,7 +344,7 @@ section {
 .home {
     display: flex;
     justify-content: center;
-    background: url(../image/banner-img.jpg) no-repeat;
+    background: url(../image/banner11-img.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 17rem;
